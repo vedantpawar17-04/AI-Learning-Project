@@ -1,0 +1,278 @@
+/* ===== Signup Container ===== */
+.signup-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #687fe5, #ebd6fb);
+	padding: 20px;
+}
+
+/* ===== Card ===== */
+.signup-card {
+	background: #fff;
+	padding: 35px 40px;
+	border-radius: 16px;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+	width: 500px;
+	text-align: center;
+}
+
+/* ===== Icon Circle ===== */
+.icon-circle {
+	width: 70px;
+	height: 70px;
+	margin: 0 auto 15px;
+	border-radius: 50%;
+	background: #687fe5;
+	color: #fff;
+	font-size: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ===== Headings ===== */
+.signup-card h2 {
+	margin-bottom: 8px;
+	color: #333;
+	font-size: 24px;
+}
+
+.signup-card p {
+	color: #666;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+/* ===== Input Groups ===== */
+.input-group {
+	text-align: left;
+	margin-bottom: 18px;
+}
+
+.input-group label {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 6px;
+	font-weight: 500;
+	color: #444;
+}
+
+.input-group input,
+.input-group select {
+	width: 100%;
+	padding: 10px 12px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 14px;
+	transition: border-color 0.2s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+	border-color: #687fe5;
+	outline: none;
+}
+
+/* ===== Password Field with Toggle ===== */
+.password-field {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.password-field input {
+	flex: 1;
+	padding-right: 70px;
+}
+
+.toggle-eye {
+	position: absolute;
+	right: 12px;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 500;
+	color: #687fe5;
+	transition: color 0.2s;
+}
+
+.toggle-eye:hover {
+	color: #4a5fd0;
+}
+
+/* ===== Rules List ===== */
+.rules-list {
+	list-style: none;
+	text-align: left;
+	padding-left: 0;
+	margin: 10px 0 18px;
+	font-size: 13px;
+	color: #888;
+}
+
+.rules-list li {
+	margin-bottom: 4px;
+}
+
+.rules-list li.valid {
+	color: green;
+	font-weight: 500;
+}
+
+/* ===== Error Box ===== */
+.error-box {
+	background: #ffe5e5;
+	color: #d9534f;
+	padding: 10px 12px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	font-size: 13px;
+	text-align: left;
+}
+
+/* ===== Signup Button ===== */
+.btn.signup-btn {
+	width: 30%;
+	padding: 12px;
+	background: #687fe5;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 600;
+	color: white;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.btn.signup-btn:hover {
+	background: #4a5fd0;
+}
+
+/* ===== Login Link ===== */
+.login-link {
+	margin-top: 16px;
+	font-size: 14px;
+	color: #444;
+}
+
+.login-link a {
+	color: #687fe5;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.login-link a:hover {
+	text-decoration: underline;
+}
+
+
+.required-asterisk {
+	color: red;
+	margin-left: 2px;
+	font-weight: bold;
+}
+
+/* Wrapper for the user-exists message */
+.user-exists-box {
+	margin-top: 15px;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 12px 15px;
+	border: 1px solid #ffbaba;
+	background-color: #ffecec;
+	color: #d8000c;
+	border-radius: 6px;
+	font-size: 14px;
+	text-align: center;
+}
+
+/* Highlight the login link */
+.user-exists-box .login-redirect {
+	color: #007bff;
+	font-weight: 600;
+	cursor: pointer;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+}
+
+.user-exists-box .login-redirect:hover {
+	color: #0056b3;
+	text-decoration: underline;
+}
+
+/* ===== Checkbox Groups ===== */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.checkbox-item:hover {
+  background-color: #e9ecef;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #687fe5;
+  cursor: pointer;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  flex: 1;
+}
+
+.checkbox-label small {
+  color: #666;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.selected-subjects {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #e7f3ff;
+  border-radius: 6px;
+  border-left: 3px solid #687fe5;
+}
+
+.selected-subjects small {
+  color: #0066cc;
+  font-weight: 500;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .signup-card {
+    width: 90%;
+    padding: 25px 20px;
+  }
+  
+  .checkbox-group {
+    padding: 8px;
+  }
+  
+  .checkbox-item {
+    padding: 6px 8px;
+  }
+}
